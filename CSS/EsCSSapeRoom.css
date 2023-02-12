@@ -1,0 +1,31 @@
+Body {
+    font-family: "Permanent Marker", cursive ;
+    background-image: linear-gradient(to right, red, darkred, #943c22);
+    color: black;
+}
+
+p {
+    font-family: "Dancing Script";
+    font-weight: bold;
+}
+
+.jumbotron {
+    margin: auto;
+    padding: 30px;
+    background-image: linear-gradient(to right, red, darkred, #943c22);
+    color: black;
+    text-align: center;
+}
+
+.story {
+    text-align: center;
+}
+
+#planeCrash {
+    width: 100%;
+    
+}
+
+.links {
+    color: black;
+}
