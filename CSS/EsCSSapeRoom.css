@@ -93,3 +93,7 @@ p {
 .about-rotate {
     transform: rotate(-10deg);
 }
+
+.contact-rotate {
+    transform: rotate(10deg);
+}
