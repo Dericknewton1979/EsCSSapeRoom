@@ -34,11 +34,6 @@ p {
     color: black;
 }
 
-/* .night-ocean-background {
-    background-repeat: no-repeat;
-    background-color: black;
-    height: 100vh;
-} */
 
 .index-body {
     min-height: 100%;
@@ -73,4 +68,28 @@ p {
     max-height: 30vh;
     z-index: 30;
     margin-left: 25%;
+}
+
+.modal-backdrop-about {
+    background-image: url(/Img/ruledTornPaper.png);
+    background-color: rgba(0,0,0,0) !important;
+    background-size: 120% 125%;
+    background-position: center;
+    border: 0 none;
+}
+
+.modal-header-about {
+    border-bottom: 0 none;
+}
+
+.modal-footer-about {
+    border-top: 0 none;
+}
+
+.modal-title-about {
+    font-size: 1.5rem;
+}
+
+.about-rotate {
+    transform: rotate(-10deg);
 }
