@@ -1,3 +1,7 @@
+HTML {
+    height: 100%;
+}
+
 Body {
     font-family: "Permanent Marker", cursive ;
     background-image: linear-gradient(to right, red, darkred, #943c22);
@@ -30,6 +34,70 @@ p {
     color: black;
 }
 
- .color-me {
-    color:black;
- }
+
+.index-body {
+    min-height: 100%;
+    background-image: url(/Img/darkSeaNight.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.waterTooWet {
+    min-width: 100vw;
+    max-height: 75vh;
+    min-height: 55vh;
+    z-index: 15;
+}
+
+.beachTooSandy {
+    min-width: 100vw;
+    max-height: 40vh;
+    min-height: 30vh;
+    z-index: 20;
+}
+
+.beachLady {
+    max-width: 40vw;
+    max-height: 50vh;
+    z-index: 40;
+}
+
+.beachBonfire {
+    max-width: 30vw;
+    max-height: 30vh;
+    z-index: 30;
+    margin-left: 25%;
+}
+
+.modal-backdrop-about {
+    background-image: url(/Img/ruledTornPaper.png);
+    background-color: rgba(0,0,0,0) !important;
+    background-size: 120% 125%;
+    background-position: center;
+    border: 0 none;
+}
+
+.modal-header-about {
+    border-bottom: 0 none;
+}
+
+.modal-footer-about {
+    border-top: 0 none;
+}
+
+.modal-title-about {
+    font-size: 1.5rem;
+}
+
+.about-rotate {
+    transform: rotate(-10deg);
+}
+
+.contact-rotate {
+    transform: rotate(10deg);
+}
+
+.bottom-nav-bar {
+    position:absolute;
+}
