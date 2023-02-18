@@ -97,3 +97,7 @@ p {
 .contact-rotate {
     transform: rotate(10deg);
 }
+
+.bottom-nav-bar {
+    position:absolute;
+}

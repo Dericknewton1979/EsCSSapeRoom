@@ -26,13 +26,13 @@
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#openingNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="openingNavbar">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a class="nav-link" href="EsCSSapeRoom.html"><i class="fa fa-home fa-lg"></i>Home</a></li>
+        <div class="collapse navbar-collapse dropup" id="openingNavbar">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item ml-auto active"><a class="nav-link" href="EsCSSapeRoom.html"><i class="fa fa-home fa-lg"></i>Home</a></li>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#accountModal" data-toggle="modal"><i class="fa fa-list fa-lg"></i>Account</a></li>
-                <li class="nav-item"><a class="nav-link" href="#aboutModal" data-toggle="modal"><i class="fa fa-list fa-lg"></i>About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contactModal" data-toggle="modal"><i class="fa fa-list fa-lg"></i>Contact</a></li>
+                <li class="nav-item ml-auto"><a class="nav-link" href="#signinModal" data-toggle="modal"><i class="fa fa-list fa-lg"></i>Account</a></li>
+                <li class="nav-item ml-auto"><a class="nav-link" href="#aboutModal" data-toggle="modal"><i class="fa fa-list fa-lg"></i>About</a></li>
+                <li class="nav-item ml-auto"><a class="nav-link" href="#contactModal" data-toggle="modal"><i class="fa fa-list fa-lg"></i>Contact</a></li>
             </ul>
         </div>
         </div>
@@ -41,8 +41,37 @@
 <!--                           Modals                              -->
 
 
-    <div id="accountModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div id="signinModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-dark">
+                    <h3 class="modal-title">Sign In</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group row">
+                                <input type="text" class="form-control" id="userName" placeholder="Username">
+                            </div>
+                            <div class="form-group row">
+                                <input type="password" class="form-control" id="yourPassword" placeholder="Password">
+                            </div>
+                            <div class="row">
+                            <button type="submit" class="form-group col-3" data-dismiss="modal">Log In</button>
+                            <p class="col-6 text-right ml-auto">Don't have an account?<br />Sign up HERE:</p>
+                            <a href="#signupModal" data-toggle="modal"><button type="button" class="form-group col-2 close" data-dismiss="modal">Sign Up</button></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="signupModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-danger text-dark">
                     <h3 class="modal-title">Setup Your Account</h3>
@@ -51,29 +80,26 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form>
-                            <div class="form-group">
-                                <label for="firstName">Your First Name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            <div class="row">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="yourEmail" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="userName" placeholder="Username">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="lastName">Your Last Name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                            <div class="row">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="yourPassword" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="Password" class="form-control" id="verifyPassword" placeholder="Re-Enter Pasword">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="yourEmail">Your Email</label>
-                                <input type="email" class="form-control" id="yourEmail" placeholder="Enter Email">
-                            </div>
-                            <div class="form-group">
-                                <label for="userName"> Your Username</label>
-                                <input type="text" class="form-control" id="userName" placeholder="Enter Username">
-                            </div>
-                            <div class="form-group">
-                                <label for="yourPassword">Enter Password</label>
-                                <input type="password" class="form-control" id="yourPassword" placeholder="Enter Password">
-                            </div>
-                            <div class="form-group">
-                                <label for="verifyPassword">Re-Enter Password</label>
-                                <input type="Password" class="form-control" id="verifyPassword" placeholder="Re-Enter Pasword">
+                            <div class="row">
+                                <button type="submit" class="form-group col-3" data-dismiss="modal">Sign Up</button>
+                                <p class="col-6 text-right ml-auto">Already have an account?<br />Sign in HERE:</p>
+                                <a href="#signinModal" data-toggle="modal"><button type="button" class="form-group col-3 close" data-dismiss="modal">Sign Up</button></a>
                             </div>
                         </form>
                     </div>
