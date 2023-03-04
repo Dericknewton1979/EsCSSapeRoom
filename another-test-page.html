@@ -35,25 +35,25 @@
 <!--                           Backpack Insides                              -->
         <div class="backpackMenu" id="backpackMenu">
             <div>
-                <button type="button" id="cluesBtn" class="clues-button"></button>
+                <button type="button" id="cluesBtn" class="clues-button" href="#cluesModal" data-toggle="modal"></button>
             </div>
             <div>
                 <img class="cluesBubble" src="Img/speechSquare.png" />
             </div>
             <div>
-                <button type="button" id="mapBtn" class="map-button"></button>
+                <button type="button" id="mapBtn" class="map-button" href="#mapModal" data-toggle="modal"></button>
             </div>
             <div>
                 <img class="mapBubble" src="Img/speechSquare.png" />
             </div>
             <div>
-                <button type="button" id="notesBtn" class="notes-button"></button>
+                <button type="button" id="notesBtn" class="notes-button" href="#notesModal" data-toggle="modal"></button>
             </div>
             <div>
                 <img class="notesBubble" src="Img/speechSquare.png" />
             </div>
             <div>
-                <button type="button" id="hintsBtn" class="hints-button"></button>
+                <button type="button" id="hintsBtn" class="hints-button" href="#hintsModal" data-toggle="modal"></button>
             </div>
             <div>
                 <img class="hintsBubble" src="Img/speechSquare.png" />
@@ -95,7 +95,7 @@
 
 
 
-<!--                           Modals                              -->
+<!--                           Main Menu Modals                              -->
 
 
 
@@ -212,6 +212,94 @@
                                 </div>
                                 </form>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<!--                           Toolbar Modals                              -->
+
+            <div id="cluesModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="container-fluid modal-content modal-backdrop-about about-rotate">
+                        <div class="row modal-header modal-header-about mt-4">
+                            <h3 class="col-10 modal-title-about text-center mx-auto">CLUES FOUND</h3>
+                        </div>
+                        <div class="row modal-body">
+                            <div class="col-10 ml-5">
+                                <div>
+                                    <p>Hey, take a look at the earthlings. Goodbye! So you two dig up, dig up dinosaurs? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. Hey, take a look at the earthlings. Goodbye! Remind me to thank John for a lovely weekend.
+
+                                        <br /><br />Jaguar shark! So tell me - does it really exist? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Yes, Yes, without the oops! God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer modal-footer-about">
+                            <button type="button" class="close mx-auto" data-dismiss="modal">&minus;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mapModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="container-fluid modal-content modal-backdrop-about about-rotate">
+                        <div class="row modal-header modal-header-about mt-4">
+                            <h3 class="col-10 modal-title-about text-center mx-auto">Map Goes HERE</h3>
+                        </div>
+                        <div class="row modal-body">
+                            <div class="col-10 ml-5">
+                                <div>
+                                    <p>Hey, take a look at the earthlings. Goodbye! So you two dig up, dig up dinosaurs? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. Hey, take a look at the earthlings. Goodbye! Remind me to thank John for a lovely weekend.
+
+                                        <br /><br />Jaguar shark! So tell me - does it really exist? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Yes, Yes, without the oops! God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer modal-footer-about">
+                            <button type="button" class="close mx-auto" data-dismiss="modal">&minus;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="notesModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content contact-rotate">
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <textarea id="notes" name="notes" placeholder="notes" rows="12"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hintsModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="container-fluid modal-content modal-backdrop-about about-rotate">
+                        <div class="row modal-header modal-header-about mt-4">
+                            <h3 class="col-10 modal-title-about text-center mx-auto">HINTS</h3>
+                        </div>
+                        <div class="row modal-body">
+                            <div class="col-10 ml-5">
+                                <div>
+                                    <p>Hey, take a look at the earthlings. Goodbye! So you two dig up, dig up dinosaurs? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. Hey, take a look at the earthlings. Goodbye! Remind me to thank John for a lovely weekend.
+
+                                        <br /><br />Jaguar shark! So tell me - does it really exist? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Yes, Yes, without the oops! God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer modal-footer-about">
+                            <button type="button" class="close mx-auto" data-dismiss="modal">&minus;</button>
                         </div>
                     </div>
                 </div>
