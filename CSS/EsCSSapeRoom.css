@@ -43,13 +43,6 @@ p {
     background-size: cover;
 }
 
-.firstpuzzle-body {
-    min-height: 100%;
-    background-image: url(/Img/shallowIslandLake.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .waterTooWet {
     min-width: 100vw;
@@ -78,36 +71,6 @@ p {
     margin-left: 25%;
 }
 
-.fernyArch {
-    bottom: -20vh;
-    min-width: 100vw;
-    max-height: 45vh;
-    min-height: 35vh;
-    z-index: 25;
-}
-
-.brightGrassy {
-    min-width: 100vw;
-    max-height: 45vh;
-    min-height: 35vh;
-    z-index: 20;
-}
-
-.leftTrees {
-    left: -10vw;
-    max-width: 45vw;
-    min-width: 30vw;
-    min-height: 80vh;
-    z-index: 10;
-}
-
-.rightTrees {
-    float: right;
-    max-width: 45vw;
-    min-width: 30vw;
-    min-height: 80vh;
-    z-index: 10;
-}
 
 .modal-backdrop-about {
     background-image: url(/Img/ruledTornPaper.png);
@@ -141,17 +104,7 @@ p {
     position:absolute;
 }
 
-.backpack-toolbar {
-    z-index: 100;
-}
-
-.the-backpack-button {
-    max-height: 20vh;
-    z-index: 30;
-}
-
-
-
+/* -----------Fixed Window */
 
 .page-container {
     display: flex;
@@ -182,6 +135,7 @@ p {
     background-size: cover;
 }
 
+/* -----------Account Menu */
 
 .broken-phone-button {
     background-image: url(/Img/brokenphone.png);
@@ -209,6 +163,18 @@ p {
     transform: rotate(4deg);
 }
 
+.accountBubble {
+    position: absolute;
+    top: 71%;
+    left: 69%;
+    width: 4vw;
+    height: 3.5vw;
+    transform: scaleX(-1) rotate(6deg);
+    display: none;
+}
+
+/* -----------About Menu */
+
 .crumpled-paper-button {
     background-image: url(/Img/crumpledPaper.png);
     background-position: center center;
@@ -221,9 +187,31 @@ p {
     left: 81%;
     background-color: rgba(0,0,0,0);
     border: none;
-    padding: 0;
-    
+    padding: 0;   
+    transition: transform 0.4s ease-in-out;
 }
+
+.crumpled-paper-button:focus {
+    outline: none;
+}
+
+.crumpled-paper-button:hover {
+    outline: none;
+    transform: rotate(-4deg);
+}
+
+.aboutBubble {
+    position: absolute;
+    top: 68%;
+    left: 80%;
+    width: 4vw;
+    height: 3.5vw;
+    transform: scaleX(-1) rotate(-3deg);
+    display: none;
+}
+
+
+/* -----------Contact Menu */
 
 .old-postcard-button {
     background-image: url(/Img/oldPostcard.png);
@@ -238,4 +226,290 @@ p {
     background-color: rgba(0,0,0,0);
     border: none;
     padding: 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+.old-postcard-button:focus {
+    outline: none;
+}
+
+.old-postcard-button:hover {
+    outline: none;
+    transform: rotate(4deg);
+}
+
+.contactBubble {
+    position: absolute;
+    top: 71%;
+    left: 91%;
+    width: 4vw;
+    height: 3.5vw;
+    transform: scaleX(-1) rotate(-10deg);
+    display: none;
+}
+
+
+/* -----------Start Game Button */
+
+.start-game-button {
+    background-image: url(/Img/animatedBonefire.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15vw;
+    height: 13vw;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    padding: 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+.start-game-button:focus {
+    outline: none;
+}
+
+.start-game-button:hover {
+    outline: none;
+    background-image: url(/Img/animatedBonefire.gif), url(/Img/animatedSmoke.gif);
+    background-position: center center, center top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, 10vw;
+    
+}
+
+.startGameBubble {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    width: 4vw;
+    height: 3.5vw;
+    transform: rotate(10deg);
+    display: none;
+}
+
+/* -----------BackPack Buttons */
+
+.closed-backpack-button {
+    background-image: url(/Img/closedGreenBackpack.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    width: 12vw;
+    height: 12vw;
+    position: absolute;
+    top: 67%;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    padding: 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+.closed-backpack-button:focus {
+    outline: none;
+}
+
+.closed-backpack-button:hover {
+    outline: none;
+    transform: rotate(4deg);
+}
+
+.open-backpack-button {
+    background-image: url(/Img/openGreenBackpack.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    width: 14vw;
+    height: 14vw;
+    position: absolute;
+    top: 67%;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    padding: 0;
+    transition: transform 0.4s ease-in-out;
+    display: none;
+}
+
+.open-backpack-button:focus {
+    outline: none;
+}
+
+.open-backpack-button:hover {
+    outline: none;
+    transform: rotate(-4deg);
+}
+
+.backpack-menu-bg {
+    background-color: rgba(0,0,0,0.4);
+    width: 18vw;
+    height: 18vw;
+    border-radius: 0% 80% 0% 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+/* -----------BackPack Menu */
+
+.backpackMenu {
+    display: none;
+}
+
+/* -----------Clues */
+
+.clues-button {
+    background-image: url(/Img/evidenceFile.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 110;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    padding: 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+.clues-button:focus {
+    outline: none;
+}
+
+.clues-button:hover {
+    outline: none;
+    transform: rotate(4deg);
+}
+
+.cluesBubble {
+    position: absolute;
+    top: 43%;
+    left: 7%;
+    width: 3.5vw;
+    height: 3vw;
+    transform: rotate(-4deg);
+    display: none;
+}
+
+/* -----------Map */
+
+.map-button {
+    background-image: url(/Img/foldedMap.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 110;
+    width: 7.5vw;
+    height: 6vw;
+    position: absolute;
+    top: 53%;
+    left: 7%;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    padding: 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+.map-button:focus {
+    outline: none;
+}
+
+.map-button:hover {
+    outline: none;
+    transform: rotate(4deg);
+}
+
+.mapBubble {
+    position: absolute;
+    top: 48%;
+    left: 14%;
+    width: 3.5vw;
+    height: 3vw;
+    transform: rotate(3deg);
+    display: none;
+}
+
+/* -----------Notes */
+
+.notes-button {
+    background-image: url(/Img/spiralNotebook.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 110;
+    width: 6.5vw;
+    height: 6vw;
+    position: absolute;
+    top: 63%;
+    left: 13%;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    padding: 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+.notes-button:focus {
+    outline: none;
+}
+
+.notes-button:hover {
+    outline: none;
+    transform: rotate(4deg);
+}
+
+.notesBubble {
+    position: absolute;
+    top: 58%;
+    left: 19.5%;
+    width: 3.5vw;
+    height: 3vw;
+    transform: rotate(14deg);
+    display: none;
+}
+
+/* -----------Hints */
+
+.hints-button {
+    background-image: url(/Img/magnifyingGlass.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 110;
+    width: 5.5vw;
+    height: 5.5vw;
+    position: absolute;
+    top: 75%;
+    left: 16%;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    padding: 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+.hints-button:focus {
+    outline: none;
+}
+
+.hints-button:hover {
+    outline: none;
+    transform: rotate(4deg);
+}
+
+.hintsBubble {
+    position: absolute;
+    top: 70%;
+    left: 23%;
+    width: 3.5vw;
+    height: 3vw;
+    transform: rotate(22deg);
+    display: none;
 }
