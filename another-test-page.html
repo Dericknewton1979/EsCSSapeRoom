@@ -21,19 +21,77 @@
     <div class="all-content-box home-page-bg">
         <div class="container-fluid">
 
+<!--                           Backpack Buttons                              -->
+
+            <div>
+                <button type="button" id="closed-backpack" class="closed-backpack-button"></button>
+            </div>
+            <div>
+                <button type="button" id="open-backpack" class="open-backpack-button"></button>
+            </div>
+            <div id="backpack-menu-bg" class="backpack-menu-bg"></div>
+
+
+<!--                           Backpack Insides                              -->
+        <div class="backpackMenu" id="backpackMenu">
+            <div>
+                <button type="button" id="cluesBtn" class="clues-button"></button>
+            </div>
+            <div>
+                <img class="cluesBubble" src="Img/speechSquare.png" />
+            </div>
+            <div>
+                <button type="button" id="mapBtn" class="map-button"></button>
+            </div>
+            <div>
+                <img class="mapBubble" src="Img/speechSquare.png" />
+            </div>
+            <div>
+                <button type="button" id="notesBtn" class="notes-button"></button>
+            </div>
+            <div>
+                <img class="notesBubble" src="Img/speechSquare.png" />
+            </div>
+            <div>
+                <button type="button" id="hintsBtn" class="hints-button"></button>
+            </div>
+            <div>
+                <img class="hintsBubble" src="Img/speechSquare.png" />
+            </div>
+        </div>
+
+
+
+
+
 
 <!--                           Bottom Buttons                              -->
 
             <div>
-                <button type="button" class="broken-phone-button" href="#signinModal" data-toggle="modal"></button>
+                <button type="button" class="broken-phone-button" id="accountBtn" href="#signinModal" data-toggle="modal"></button>
             </div>
             <div>
-                <button type="button" class="crumpled-paper-button" href="#aboutModal" data-toggle="modal"></button>
+                <button type="button" class="crumpled-paper-button" id="aboutBtn" href="#aboutModal" data-toggle="modal"></button>
             </div>
             <div>
-                <button type="button" class="old-postcard-button" href="#contactModal" data-toggle="modal"></button>
+                <button type="button" class="old-postcard-button" id="contactBtn" href="#contactModal" data-toggle="modal"></button>
+            </div>
+            <div>
+                <a href="/EsCSSapeRoom.html"><button type="button" id="startGameBtn" class="start-game-button"></button></a>
             </div>
 
+            <div>
+                <img class="accountBubble" src="Img/speechSquare.png" />
+            </div>
+            <div>
+                <img class="aboutBubble" src="Img/speechSquare.png" />
+            </div>
+            <div>
+                <img class="contactBubble" src="Img/speechSquare.png" />
+            </div>
+            <div>
+                <img class="startGameBubble" src="Img/speechSquare.png" />
+            </div>
 
 
 
@@ -172,5 +230,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/JS/backpackToolbar.js"></script>
 </body>
 </html>
