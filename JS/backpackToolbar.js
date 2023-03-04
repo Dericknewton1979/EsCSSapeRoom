@@ -1,6 +1,7 @@
 const closedBackpack = document.querySelector("#closed-backpack");
 const openBackpack = document.querySelector("#open-backpack");
 const backpackBG = document.querySelector("#backpack-menu-bg");
+const backpackBubble = document.querySelector(".backpackBubble");
 
 const accountBtn = document.querySelector("#accountBtn");
 const accountBubble = document.querySelector(".accountBubble");
@@ -31,6 +32,8 @@ const hintsBubble = document.querySelector(".hintsBubble");
 
 closedBackpack.addEventListener("click", openBackpackItem);
 openBackpack.addEventListener("click", closeBackpackItem);
+closedBackpack.addEventListener("mouseover", () => { speechBubbleIn(9) });
+closedBackpack.addEventListener("mouseout", () => { speechBubbleOut(9) });
 
 accountBtn.addEventListener("mouseover", () => { speechBubbleIn(1) });
 accountBtn.addEventListener("mouseout", () => { speechBubbleOut(1) });
@@ -99,6 +102,9 @@ function speechBubbleIn(num) {
         case 8:
             hintsBubble.style.display = "inline-block";
             break;           
+        case 9:
+            backpackBubble.style.display = "inline-block";
+            break;     
         default:
             break;
     }
@@ -129,7 +135,10 @@ function speechBubbleOut(num) {
             break;
         case 8:
             hintsBubble.style.display = "none";
-            break;           
+            break;
+        case 9:
+            backpackBubble.style.display = "none";
+            break;         
         default:
             break;
     }

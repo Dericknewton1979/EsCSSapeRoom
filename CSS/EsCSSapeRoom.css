@@ -356,6 +356,16 @@ p {
     display: none;
 }
 
+.backpackBubble {
+    position: absolute;
+    top: 63%;
+    left: 12%;
+    width: 5vw;
+    height: 4vw;
+    transform: rotate(14deg);
+    display: none;
+}
+
 /* -----------BackPack Menu */
 
 .backpackMenu {
