@@ -20,8 +20,33 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    width:100%;
+    
+    
    
     }
 
-     
+    .modal-backdrop-about {
+        background-image: url(/Img/noneRuledYellowPaper.png);
+        background-color: rgba(0,0,0,0) !important;
+        background-size: 120% 125%;
+        background-position: center;
+        border: 0 none;
+
+    }
+
+    .modal-header-about {
+        border-bottom: 0 none;
+    }
+    
+    .modal-footer-about {
+        border-top: 0 none;
+    }
+    
+    .modal-title-about {
+        font-size: 1.5rem;
+    }
+    
+    /* .about-rotate {
+        transform: rotate(-10deg);
+    } */
+    
