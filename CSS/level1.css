@@ -20,10 +20,14 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    
-    
-   
     }
+
+#insideCockPit {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
 
     .modal-backdrop-about {
         background-image: url(/Img/noneRuledYellowPaper.png);
