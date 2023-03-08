@@ -16,18 +16,26 @@
 }
 
 #insidePlane {
+    /* width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     }
 
-#insideCockPit {
+/* #insideCockPit {
+    background: url(/Img/cockpit1.jpg);
+    height: 200px;
+    width: 200px;
+    background-size: 200px 200px; 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-}
+} */
 
     .modal-backdrop-about {
         background-image: url(/Img/noneRuledYellowPaper.png);
@@ -50,7 +58,38 @@
         font-size: 1.5rem;
     }
     
-    /* .about-rotate {
-        transform: rotate(-10deg);
-    } */
+    .bg {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        overflow: hidden;
+        position: absolute;
+    }
     
+    .bg img {
+        width: 100%;
+        height: 100%;
+        
+        display: block;
+        border: none;
+    }
+
+    .bg1 {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        overflow: hidden;
+        position: absolute;
+    }
+    
+    .bg1 img {
+        width: 100%;
+        height: 100%;
+        
+        display: block;
+        border: none;
+    }
