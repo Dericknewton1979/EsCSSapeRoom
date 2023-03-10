@@ -26,8 +26,8 @@
     background-attachment: fixed;
     }
 
-/* #insideCockPit {
-    background: url(/Img/cockpit1.jpg);
+.insideCockPit {
+    /* background: url(/Img/cockpit1.2.jpg); */
     height: 200px;
     width: 200px;
     background-size: 200px 200px; 
@@ -35,7 +35,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-} */
+}
 
     .modal-backdrop-about {
         background-image: url(/Img/noneRuledYellowPaper.png);
