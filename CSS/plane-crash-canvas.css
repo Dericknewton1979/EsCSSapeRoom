@@ -17,31 +17,29 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 1;
 
 }
 
 
-.DHLbox {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 9vw;
-    height: 6vw;
+.DHLboxBtn {
+    width: 120;
+    height: 80;
     position: absolute;
     top: 80%;
     left: 69%;
     background-color: rgba(0,0,0,0);
-    border: none;
+    border: solid 2px black;
     padding: 0;
     transition: transform 0.4s ease-in-out;
-    
+    z-index: 10;
 }
 
-.DHLbox:focus{
+.DHLboxBtn:focus{
     outline: none;
 }
 
-.DHLbox:hover{
+.DHLboxBtn:hover{
     background-image: url(../Img/star-burst.gif);
     outline: none;
     transform: rotate(4deg);

@@ -9,38 +9,44 @@
     <link rel="stylesheet" href="./CSS/plane-crash-canvas.css">
 </head>
 <body>
-    <canvas id="planeCanvas" usemap="#canvasTestMap">
+    <div id="containerWrap">
+        <canvas id="planeCanvas">    </canvas>
 
 
-        <map name="canvasTestMap">
-            <area target="" alt="DHL-box" title="Floating Box" data-toggle="modal" data-target="#dhlModal" coords="476,938,572,991" shape="rect"> 
-        </map>
+        <div>
+            <button type="button" class="DHLboxBtn" id="DHLboxBtn" href="#dhlModal" data-toggle="modal"></button>
+        </div>
 
-        <div id="dhlModal" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="container-fluid modal-content modal-backdrop-about about-rotate">
-                    <div class="row modal-header modal-header-about mt-4">
-                        <h3 class="col-10 modal-title-about text-center mx-auto">DHL Box Contents</h3>
-                    </div>
-                    <div class="row modal-body">
-                        <div class="col-10 ml-5">
-                            <div>
-                                Clickabe icons with descriptions of what is in this box
-                                
-                            </div>
+    </div>
+
+
+
+
+    <div id="dhlModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="container-fluid modal-content modal-backdrop-about about-rotate">
+                <div class="row modal-header modal-header-about mt-4">
+                    <h3 class="col-10 modal-title-about text-center mx-auto">DHL Box Contents</h3>
+                </div>
+                <div class="row modal-body">
+                    <div class="col-10 ml-5">
+                        <div>
+                            Clickabe icons with descriptions of what is in this box
+                            
                         </div>
                     </div>
-                    <div class="modal-footer modal-footer-about">
-                        <button type="link"  class="close mx-auto" data-dismiss="modal">&minus;</button>
-                    </div>
+                </div>
+                <div class="modal-footer modal-footer-about">
+                    <button type="link"  class="close mx-auto" data-dismiss="modal">&minus;</button>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
 
-    </canvas>
+
 
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
