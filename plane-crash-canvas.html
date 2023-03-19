@@ -5,12 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canvas Test</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./CSS/plane-crash-canvas.css">
 </head>
 <body>
-    <canvas id="planeCanvas"></canvas>
+    <canvas id="planeCanvas" usemap="#canvasTestMap">
+
+
+        <map name="canvasTestMap">
+            <area target="" alt="DHL-box" title="Floating Box" data-toggle="modal" data-target="#dhlModal" coords="476,938,572,991" shape="rect"> 
+        </map>
+
+        <div id="dhlModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="container-fluid modal-content modal-backdrop-about about-rotate">
+                    <div class="row modal-header modal-header-about mt-4">
+                        <h3 class="col-10 modal-title-about text-center mx-auto">DHL Box Contents</h3>
+                    </div>
+                    <div class="row modal-body">
+                        <div class="col-10 ml-5">
+                            <div>
+                                Clickabe icons with descriptions of what is in this box
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer modal-footer-about">
+                        <button type="link"  class="close mx-auto" data-dismiss="modal">&minus;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </canvas>
+
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script type="module" src="./JS/plane-crash-canvas.js"></script>
     
 </body>
 </html>
+
+
+<!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1130">
+    <image width="1920" height="1130" xlink:href="/path/to/image"></image> <a xlink:href="DHLbox">
+      <rect x="478" y="936" fill="#fff" opacity="0" width="102" height="56"></rect>
+    </a><a xlink:href="planeDoor">
+      <rect x="1034" y="963" fill="#fff" opacity="0" width="171" height="50"></rect>
+    </a><a xlink:href="TNTbox">
+      <rect x="98" y="995" fill="#fff" opacity="0" width="180" height="73"></rect>
+    </a><a xlink:href="insidePlane">
+      <rect x="1222" y="645" fill="#fff" opacity="0" width="126" height="251"></rect>
+    </a>
+  </svg> -->
