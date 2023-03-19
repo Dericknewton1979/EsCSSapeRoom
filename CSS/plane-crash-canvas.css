@@ -19,3 +19,40 @@
     background-size: cover;
 
 }
+
+
+.DHLbox {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 9vw;
+    height: 6vw;
+    position: absolute;
+    top: 80%;
+    left: 69%;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    padding: 0;
+    transition: transform 0.4s ease-in-out;
+    
+}
+
+.DHLbox:focus{
+    outline: none;
+}
+
+.DHLbox:hover{
+    background-image: url(../Img/star-burst.gif);
+    outline: none;
+    transform: rotate(4deg);
+}
+
+/* .accountBubble {
+    position: absolute;
+    top: 71%;
+    left: 69%;
+    width: 4vw;
+    height: 3.5vw;
+    transform: scaleX(-1) rotate(6deg);
+    display: none;
+} */
