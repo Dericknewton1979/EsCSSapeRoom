@@ -10,9 +10,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* width: 90vw;
-    height: 50vw;
-    max-height: 100vh; */
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 98%;
+    max-height: 95%;
+    background: url(../Img/planecrash2.jpg);
+    background-position: relative;
+    
 }
